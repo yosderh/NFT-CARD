@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+   /* ### Primary */
+
+--azulSuave: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/*### Neutral */
+
+--azulOfMain: hsl(217, 54%, 11%);
+--azulOfCard: hsl(216, 50%, 16%);
+--azulOfLine: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  img{
+      max-width: 100%;
+  }
+  ul{
+      list-style-type: none;
+  }
+
+  body{
+   background-color: var(--azulOfMain);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    color: var(--azulSuave);
+    font-weight: 300;
+    /*line-height: 1.5;*/
+  }
+
+  .contenedor h2{
+      color: var(--White);
+      margin: 2.5rem, 0;
+      font-size: 2.1rem;
+  }
+  .contenedor h2:hover{
+      cursor: pointer;
+      color: var(--Cyan);
+  }
+
+  .cubo{
+      position: relative;
+      
+  }
+
+  .cubo .overlay{
+      position: absolute;
+      background-color: none;
+      width: 100%;
+      height: 100%;
+  }
+
+  .cubo .overlay:hover{
+    
+    background: url(/nft-preview-card-component-main/images/icon-view.svg) no-repeat center;
+    background-color: hsl(178, 100%, 50%, 60%);
+    border-radius: 3%;
+  }
+
+  .cubo .overlay img{
+      width: 100%;
+    display: block;
+  }
+
+  .contenedor{
+      background-color: var(--azulOfCard);
+      padding: 2.5rem;
+      border-radius: 3%;
+      margin-bottom: 1rem;
+
+
+  }
+  .contenedor img{
+      border-radius: 3%;
+  }
+  .items{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+  }
+
+  .items li:first-child{
+      color: var(--Cyan);
+      font-weight: 400;
+  }
+  .items li{
+      display: flex;
+      align-items: center;
+
+  }
+  .items li img{
+      margin-right: 0.5rem;
+  }
+
+  .creador{
+      display: flex;
+      align-items: center;
+      justify-content: start ;
+      padding-top: 1.5rem;
+
+      border-top: 0.1rem solid var(--azulOfLine);
+  }
+  .creador img{
+      width: 3.5rem;
+      border: 0.1rem solid var(--White);
+      border-radius: 50%;
+      margin-right: 1.5rem;
+  }
+  .creador span{
+      color: var(--White);
+  }
+  .creador span:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+  }
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media (min-width: 375px) {   
+      .contenedor{
+          max-width: 35rem;
+          margin: auto;
+          margin-bottom: 1rem;
+      }
+      
+  }
