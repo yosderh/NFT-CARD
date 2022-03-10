@@ -62,7 +62,7 @@ html {
 
   .cubo .overlay:hover{
     
-    background: url(/nft-preview-card-component-main/images/icon-view.svg) no-repeat center;
+    background: url(images/icon-view.svg) no-repeat center;
     background-color: hsl(178, 100%, 50%, 60%);
     border-radius: 3%;
   }
